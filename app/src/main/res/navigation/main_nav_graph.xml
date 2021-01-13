@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.dtse.hmsclouddbconnection.view.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_dbFragment"
+            app:destination="@id/dbFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dbFragment"
+        android:name="com.dtse.hmsclouddbconnection.view.DbFragment"
+        android:label="DbFragment" >
+        <action
+            android:id="@+id/action_dbFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>

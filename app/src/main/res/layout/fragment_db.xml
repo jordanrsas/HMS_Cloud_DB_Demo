@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/emui_color_gray_1">
+
+    <TextView
+        android:id="@+id/usersListView"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="Empty"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/queryAllUsers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Query All Users"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usersListView" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="User name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/design_default_color_primary"
+        app:layout_constraintTop_toBottomOf="@+id/queryAllUsers" />
+
+    <EditText
+        android:id="@+id/nickNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nick name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/design_default_color_primary"
+        app:layout_constraintTop_toBottomOf="@id/nameEditText" />
+
+    <EditText
+        android:id="@+id/lastNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/design_default_color_primary"
+        app:layout_constraintTop_toBottomOf="@+id/nickNameEditText" />
+
+    <EditText
+        android:id="@+id/avatarEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Avatat"
+        android:textColor="@color/black"
+        android:textColorHint="@color/design_default_color_primary"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameEditText" />
+
+    <Button
+        android:id="@+id/saveUserButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Save new user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avatarEditText" />
+
+    <EditText
+        android:id="@+id/uidToDeleteEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="User Id"
+        android:textColor="@color/black"
+        android:textColorHint="@color/design_default_color_primary"
+        app:layout_constraintTop_toBottomOf="@+id/saveUserButton" />
+
+    <Button
+        android:id="@+id/deletUserButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uidToDeleteEdit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
